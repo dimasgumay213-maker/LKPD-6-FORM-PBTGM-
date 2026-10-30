@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas bu nanin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wall-text" aria-hidden="true">Dimasss</div>
+  <span class="spray s1" aria-hidden="true"></span>
+  <span class="spray s2" aria-hidden="true"></span>
+  <span class="spray s3" aria-hidden="true"></span>
+
+  <main class="card">
+    <span class="tape t1" aria-hidden="true"></span>
+    <span class="tape t2" aria-hidden="true"></span>
+    <span class="sticker" aria-hidden="true">NEW<br>MEMBER</span>
+
+    <div class="mascot" id="mascot" aria-hidden="true">
+      <div class="gelembung" id="gelembung" hidden></div>
+      <div class="miring">
+        <div class="bob">
+          <div class="sosok">
+            <div class="wajah" id="wajah"></div>
+            <svg class="kucing" id="kucing" viewBox="0 0 64 71">
+              <g class="ekor" fill="none" stroke-linecap="round">
+                <path d="M46 56 Q58 54 55 38" stroke="#111" stroke-width="9"/>
+                <path d="M46 56 Q58 54 55 38" stroke="#ff9f43" stroke-width="4.5"/>
+              </g>
+              <ellipse cx="32" cy="55" rx="19" ry="14" fill="#ff9f43" stroke="#111" stroke-width="3"/>
+              <ellipse cx="22" cy="57" rx="7" ry="5.5" fill="#ffe8c8" stroke="#111" stroke-width="2.5"/>
+              <ellipse cx="42" cy="57" rx="7" ry="5.5" fill="#ffe8c8" stroke="#111" stroke-width="2.5"/>
+              <path class="telinga-k" d="M10 24 L11 5 L26 14 Z" fill="#ff9f43" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M54 24 L53 5 L38 14 Z" fill="#ff9f43" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M14 18 L14.5 10 L21 14 Z M50 18 L49.5 10 L43 14 Z" fill="#ff8fb3"/>
+              <ellipse cx="32" cy="30" rx="23" ry="19" fill="#ff9f43" stroke="#111" stroke-width="3"/>
+              <path d="M32 12 v6 M25.5 13.5 l1.2 5 M38.5 13.5 l-1.2 5" stroke="#c96a12" stroke-width="2.6" stroke-linecap="round"/>
+              <ellipse cx="16" cy="37" rx="4.2" ry="2.6" fill="#ff7aa8" opacity=".6"/>
+              <ellipse cx="48" cy="37" rx="4.2" ry="2.6" fill="#ff7aa8" opacity=".6"/>
+              <g class="m-buka">
+                <ellipse cx="23" cy="29" rx="3.4" ry="4.4" fill="#111"/><circle cx="24.2" cy="27.3" r="1.2" fill="#fff"/>
+                <ellipse cx="41" cy="29" rx="3.4" ry="4.4" fill="#111"/><circle cx="42.2" cy="27.3" r="1.2" fill="#fff"/>
+              </g>
+              <path class="m-tutup" d="M19 30 h8 M37 30 h8" stroke="#111" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path class="m-senang" d="M19 31 q4 -7 8 0 M37 31 q4 -7 8 0" stroke="#111" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M29 35 h6 l-3 3.6 z" fill="#ff6b9a" stroke="#111" stroke-width="1.2" stroke-linejoin="round"/>
+              <path class="mulut-w" d="M32 38.6 q-3 4 -6.5 1.4 M32 38.6 q3 4 6.5 1.4" stroke="#111" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <ellipse class="mulut-o" cx="32" cy="42.5" rx="3.2" ry="3.6" fill="#8b1e3f" stroke="#111" stroke-width="1.5"/>
+              <path d="M12 36 h-9 M13 40 l-9 3.5 M52 36 h9 M51 40 l9 3.5" stroke="#111" stroke-width="1.8" stroke-linecap="round"/>
+              <g class="paw">
+                <ellipse cx="24" cy="29" rx="9" ry="7" fill="#ffe8c8" stroke="#111" stroke-width="2.5"/>
+                <ellipse cx="40" cy="29" rx="9" ry="7" fill="#ffe8c8" stroke="#111" stroke-width="2.5"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <p class="tag">ekskul SMK Negeri 1 Tengaran ✦ 2026</p>
+      <h1>GABUNG<span>SEKARANG!</span></h1>
+      <p class="sub">Isi data, pilih ekskul, jadi bagian dari Anggota Ekskul</p>
+    </header>
+
+    <form id="formDaftar" novalidate>
+      <div class="field">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Contoh: Dimasss" autocomplete="name">
+        <small class="error" id="err-nama" role="alert"></small>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email">
+        <small class="error" id="err-email" role="alert"></small>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" autocomplete="new-password">
+        <small class="error" id="err-password" role="alert"></small>
+      </div>
+
+      <div class="field">
+        <label for="konfirmasi">Konfirmasi Password</label>
+        <input type="password" id="konfirmasi" name="konfirmasi" placeholder="Ulangi password" autocomplete="new-password">
+        <small class="error" id="err-konfirmasi" role="alert"></small>
+      </div>
+
+      <div class="field">
+        <label for="ekskul">Pilihan Ekstrakurikuler</label>
+        <select id="ekskul" name="ekskul">
+          <option value="">-- Pilih ekskul kamu --</option>
+          <option>jurnalistik</option>
+          <option>pmr</option>
+          <option>paskibra</option>
+          <option>pencak silat</option>
+          <option>nari</option>
+          <option>bahasa jepang</option>
+          <option>bantara</option>
+          <option>futsal</option>
+          <option>volly</option>
+          <option>drumband</option>
+          <option>robbana</option>
+          <option>rohis</option>
+          <option>faster</option>
+          <option>padus</option>
+        </select>
+        <small class="error" id="err-ekskul" role="alert"></small>
+      </div>
+
+      <button type="submit">DAFTAR SEKARANG ⚡</button>
+      <p id="sukses" class="sukses" role="status" hidden></p>
+    </form>
+  </main>
+
+  <script src="java.js"></script>
+</body>
+</html>
